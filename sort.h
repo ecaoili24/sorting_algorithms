@@ -31,6 +31,6 @@ void qwiksort(int *array, int lo, int hi, size_t size);
 int partition(int *array, int lo, int hi, size_t size);
 int sorted_array(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
-void swap_nodes(listint_t *nodeL, listint_t *nodeR):
+void swap_nodes(listint_t *nodeL, listint_t *nodeR);
 
 #endif
