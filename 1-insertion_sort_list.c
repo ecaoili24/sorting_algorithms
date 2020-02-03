@@ -11,6 +11,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *temp, *current, *t_list;
 	int elem;
+
 	for (temp = (*list)->next; temp != NULL; temp = temp->next)
 	{
 		elem = temp->n;
