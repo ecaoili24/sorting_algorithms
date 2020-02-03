@@ -30,5 +30,6 @@ void quick_sort(int *array, size_t size);
 void qwiksort(int *array, int lo, int hi, size_t size);
 int partition(int *array, int lo, int hi, size_t size);
 int sorted_array(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
 
 #endif
