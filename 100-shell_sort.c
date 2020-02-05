@@ -15,7 +15,7 @@ void shell_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	while (h < (int) size / 3)
+	while (h <= (int) size / 3)
 	{
 		h = h * 3 + 1;
 	}
@@ -33,7 +33,6 @@ void shell_sort(int *array, size_t size)
 			}
 		}
 		h = (h - 1) / 3;
-		i++;
 		print_array(array, size);
 	}
 }
