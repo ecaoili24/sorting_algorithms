@@ -33,6 +33,7 @@ void shell_sort(int *array, size_t size)
 			}
 		}
 		h = (h - 1) / 3;
+		i++;
 		print_array(array, size);
 	}
 }
