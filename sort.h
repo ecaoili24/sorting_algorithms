@@ -32,5 +32,6 @@ int partition(int *array, int lo, int hi, size_t size);
 int sorted_array(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void swap_nodes(listint_t *nodeL, listint_t *nodeR);
+void shell_sort(int *array, size_t size);
 
 #endif
