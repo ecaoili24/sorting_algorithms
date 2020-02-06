@@ -19,13 +19,11 @@ void counting_sort(int *array, size_t size)
 		if (array[i] < 0)
 			return;
 	}
-
 	for (i = 1; i < (int) size; i++)
 	{
 		if (array[i] > max)
 			max = array[i];
 	}
-
 	count_arr = calloc(sizeof(int), max + 1);
 
 	for (j = 0; j < (int) size; j++)
