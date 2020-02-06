@@ -19,27 +19,28 @@ void counting_sort(int *array, size_t size)
 		if (array[i] > max)
 			max = array[i];
 	}
-
 	count_arr = calloc(sizeof(int), max + 1);
+	if (count_arr == NULL)
+		return;
 
 	for (j = 0; j < (int) size; j++)
 		count_arr[array[j]] += 1;
 
 	for (k = 1; k <= max; k++)
-	{
 		count_arr[k] += count_arr[k - 1];
-	}
 
 	output = malloc(sizeof(int) * size);
-
-	for (m = size - 1; m >= 0; m--)
+	if (output == NULL)
 	{
-		output[count_arr[array[m]] - 1] = array[m];
+		free(count_arr);
+		return;
 	}
+	for (m = size - 1; m >= 0; m--)
+		output[count_arr[array[m]] - 1] = array[m];
 
 	for (n = 0; n < (int) size; n++)
-	{
 		array[n] = output[n];
-	}
 	print_array(count_arr, max + 1);
+	free(output);
+	free(count_arr);
 }
