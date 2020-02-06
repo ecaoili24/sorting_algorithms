@@ -19,9 +19,12 @@ void counting_sort(int *array, size_t size)
 		if (array[i] > max)
 			max = array[i];
 	}
-	count_arr = calloc(sizeof(int), max + 1);
+	count_arr = malloc(sizeof(int) * (max + 1));
 	if (count_arr == NULL)
 		return;
+
+	for (i = 0; i <= max; i++)
+		count_arr[i] = 0;
 
 	for (j = 0; j < (int) size; j++)
 		count_arr[array[j]] += 1;
