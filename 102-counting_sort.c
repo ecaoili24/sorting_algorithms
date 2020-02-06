@@ -42,4 +42,6 @@ void counting_sort(int *array, size_t size)
 		array[n] = output[n];
 	}
 	print_array(count_arr, max + 1);
+	free(output);
+	free(count_arr);
 }
