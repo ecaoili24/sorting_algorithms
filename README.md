@@ -13,7 +13,7 @@
 
 - Allowed editors: vi, vim, emacs
 - Files will be compiled on Ubuntu 14.04 LTS
-- Code uses the Betty style.
+- Code uses the Betty style
 
 ### Authors
 [Kevin Paul Apostol](858@holbertonschool.com)
