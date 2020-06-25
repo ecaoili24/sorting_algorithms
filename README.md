@@ -4,7 +4,20 @@
 
 # Sorting Algorithms in C
 
-## Description
+## Definition 
+
+A sorting algo is utilized to rearrange a given array or elements in a list according to a comparison operator on the elements. Using the comparison operator, it will then decided the new order of the given element in the respective data structure.
+
+Examples of Sorting Algorithms:
+- Selction 
+- Bubble
+- Insertion
+- Merge
+- Quick
+- Counting
+- Heap
+- Radix 
+- Cocktail
 
 ## Learning Objectives
 
