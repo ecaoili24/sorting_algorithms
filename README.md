@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.ibb.co/nMtRXQR/Holberton.png">
+</p>
+
 # Sorting Algorithms in C
 
 ## Description
